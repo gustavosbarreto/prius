@@ -1,0 +1,8 @@
+<code id="code" style="display:block;white-space:pre-wrap"></code>
+<script>
+  window.onload = function() {
+      FileSystemAPI.readFile("/etc/passwd", function(data) {
+          document.getElementById("code").innerHTML = data;
+      });
+  }
+</script>
